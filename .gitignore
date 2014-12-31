@@ -1,0 +1,6 @@
+.buckd
+.buckconfig
+.DS_Store
+.idea
+*.iml
+buck-out
