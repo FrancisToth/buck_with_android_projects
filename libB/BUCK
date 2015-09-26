@@ -1,17 +1,13 @@
-DEPENDENCIES = [ '//libA:src' ]
-
 android_library(
     name='src',
     srcs=glob(['src/main/java/**/*.java']),
-    deps=DEPENDENCIES + [':res'],
+    deps=[':res'],
     visibility=['PUBLIC'],
-    exported_deps=DEPENDENCIES
 )
 
 android_resource(
     name='manifest',
     manifest='src/main/AndroidManifest.xml',
-    deps=['//libA:manifest'],
     visibility=['PUBLIC'],
 )
 
